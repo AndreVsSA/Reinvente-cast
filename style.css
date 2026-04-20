@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Barlow Display";
+  src: url("scr/fonts/Barlow/Barlow-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ─── WhatsApp Float Button ─────────────────────────────────────────────── */
 @keyframes wa-pulse {
   0%   { box-shadow: 0 0 0 0   rgba(37, 211, 102, 0.7); }
@@ -41,6 +49,7 @@
   --gold-strong: #dbb547;
   --gold-soft: #8f6f21;
   --line: #2e2820;
+  --font-display: "Barlow Display", "Manrope", sans-serif;
 }
 
 * {
@@ -2056,4 +2065,27 @@ body {
     flex-wrap: wrap;
     gap: 10px 14px;
   }
+}
+
+.brand,
+.hero-title,
+.hero-subtitle,
+.brands-group span,
+.studio-title,
+.studio-stat-number,
+.services-title,
+.service-card h3,
+.methodology-title,
+.method-step h3,
+.testimonials-title,
+.testimonial-quote-mark,
+.testimonial-text,
+.testimonial-name,
+.final-cta-title,
+.faq-title,
+.footer-brand,
+.footer-tagline,
+.footer-nav-col h3,
+.footer-contact-col h3 {
+  font-family: var(--font-display);
 }
