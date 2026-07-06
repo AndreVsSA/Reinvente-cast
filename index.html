@@ -25,16 +25,23 @@
       <nav class="nav" id="main-nav" aria-label="Navegação principal">
         <a href="#">Sobre</a>
         <a href="#servicos">Serviços</a>
-        <a href="#metodologia">Metodologia</a>
+        <a href="#podcasts">Podcasts</a>
         <a href="#depoimentos">Depoimentos</a>
       </nav>
 
-      <a href="#" class="btn btn-header">Fale Conosco</a>
+      <a href="https://wa.me/5511916108176" class="btn btn-header" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="scr/vds/podcast.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
       <div class="container hero-inner">
         <p class="badge">
           <span aria-hidden="true">★</span>
@@ -59,13 +66,19 @@
 
         <div class="hero-proof">
           <div class="avatars" aria-hidden="true">
-            <span class="avatar a1">L</span>
-            <span class="avatar a2">M</span>
-            <span class="avatar a3">R</span>
+            <span class="avatar">
+              <img src="scr/imgs/logo%20CAF%C3%89%20COM%20CONTIGENCIA.png" alt="Café com Contingência" loading="eager" decoding="async">
+            </span>
+            <span class="avatar">
+              <img src="scr/imgs/logo%20RESTART.png" alt="Restart" loading="eager" decoding="async">
+            </span>
+            <span class="avatar">
+              <img src="scr/imgs/logo%20TIMMY%20CAST.png" alt="Timmy Cast" loading="eager" decoding="async">
+            </span>
           </div>
           <div class="proof-text">
             <strong>Mais de 200 episódios</strong> produzidos<br>
-            <span>Clientes em todo o Brasil</span>
+           
           </div>
         </div>
       </div>
@@ -97,7 +110,99 @@
       </div>
     </section>
 
-    <section class="studio" id="estudio" aria-label="Conheca o estudio">
+    
+
+    <section class="services" id="servicos" aria-label="O que oferecemos">
+      <div class="container services-inner">
+        <p class="services-label">O QUE OFERECEMOS</p>
+        <h2 class="services-title">Locação completa do<br>nosso estúdio</h2>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="2" width="6" height="11" rx="3"></rect>
+                <path d="M5 10a7 7 0 0 0 14 0"></path>
+                <path d="M12 17v5"></path>
+                <path d="M8 22h8"></path>
+              </svg>
+            </span>
+            <h3>Estúdio Pronto para Gravar</h3>
+            <p>Ambiente acústico tratado, pronto para receber seu podcast com conforto e qualidade.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="13" height="9" rx="2"></rect>
+                <path d="M9.5 14v4"></path>
+                <path d="M7 18h5"></path>
+                <path d="M16 8l5-3v8l-5-3z"></path>
+              </svg>
+            </span>
+            <h3>Estrutura de Áudio e Vídeo</h3>
+            <p>Microfones, iluminação e cenário organizados para você gravar com padrão profissional.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+                <path d="M12 3v2"></path>
+              </svg>
+            </span>
+            <h3>Locação por Hora ou Período</h3>
+            <p>Reserve o estúdio no formato que fizer mais sentido para sua rotina de gravações.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="3"></circle>
+                <path d="M6 19a6 6 0 0 1 12 0"></path>
+                <circle cx="5" cy="10" r="2"></circle>
+                <circle cx="19" cy="10" r="2"></circle>
+                <path d="M2 19a4 4 0 0 1 4-3"></path>
+                <path d="M22 19a4 4 0 0 0-4-3"></path>
+              </svg>
+            </span>
+            <h3>Infraestrutura para Equipes</h3>
+            <p>Espaço ideal para receber convidados, equipes e gravações com múltiplos participantes.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="11" width="16" height="7" rx="2"></rect>
+                <path d="M4 13h16"></path>
+                <path d="M7 11V9a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"></path>
+                <path d="M7 20v1"></path>
+                <path d="M17 20v1"></path>
+              </svg>
+            </span>
+            <h3>Ambiente Confortável</h3>
+            <p>Um espaço pensado para longas sessões, com organização, conforto e foco na gravação.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 13a8 8 0 0 1 16 0"></path>
+                <rect x="2" y="12" width="3" height="6" rx="1"></rect>
+                <rect x="19" y="12" width="3" height="6" rx="1"></rect>
+                <path d="M8 19h8"></path>
+                <path d="M12 8v2"></path>
+              </svg>
+            </span>
+            <h3>Suporte no Dia da Gravação</h3>
+            <p>Recepção e orientação operacional para você aproveitar ao máximo o tempo no estúdio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<section class="studio" id="estudio" aria-label="Conheca o estudio">
       <div class="container studio-inner">
 
         <p class="studio-label">O ESTUDIO</p>
@@ -107,155 +212,77 @@
             Um ambiente criado<br>
             <span class="highlight">para grandes vozes</span>
           </h2>
-        
         </div>
 
-        <div class="studio-main">
-          <div class="studio-video-wrap">
-            <video class="studio-video" autoplay muted loop playsinline>
-              <source src="scr/vds/podcast.mp4" type="video/mp4">
-            </video>
-            <div class="studio-video-badge">
-              <span aria-hidden="true">★</span> Ao vivo no estudio
-            </div>
+        <div class="studio-gallery">
+          <div class="studio-shot studio-shot-large">
+            <img src="scr/imgs/podcast-1-q.jpg" alt="Area principal do estudio Reinvente" loading="lazy">
           </div>
 
-          <div class="studio-side-imgs">
-            <div class="studio-img-wrap">
-              <img src="scr/imgs/podcast%201.jpg" alt="Mesa de gravacao do estudio Reinvente" loading="lazy">
-            </div>
-            <div class="studio-img-wrap">
-              <img src="scr/imgs/podcast%202.jpg" alt="Microfone profissional do estudio Reinvente" loading="lazy">
-            </div>
+          <div class="studio-shot">
+            <img src="scr/imgs/podcast-2-q.jpg" alt="Cenario de gravação do estudio Reinvente" loading="lazy">
           </div>
-        </div>
 
-     
+          <div class="studio-shot">
+            <img src="scr/imgs/podcast-3-q.jpg" alt="Detalhe da iluminacao do estudio Reinvente" loading="lazy">
+          </div>
 
-          
+          <div class="studio-shot">
+            <img src="scr/imgs/podcast-4-q.jpg" alt="Area de apoio do estudio Reinvente" loading="lazy">
+          </div>
+
+          <div class="studio-shot">
+            <img src="scr/imgs/podcast-5-q.jpg" alt="Espaco de captação do estudio Reinvente" loading="lazy">
+          </div>
+
+      
         </div>
 
       </div>
     </section>
 
-    <section class="services" id="servicos" aria-label="O que oferecemos">
-      <div class="container services-inner">
-        <p class="services-label">O QUE OFERECEMOS</p>
-        <h2 class="services-title">Soluções completas para<br>o seu podcast</h2>
 
-        <div class="services-grid">
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="2" width="6" height="12" rx="3"></rect>
-                <path d="M5 10a7 7 0 0 0 14 0"></path>
-                <path d="M12 17v5"></path>
-                <path d="M8 22h8"></path>
-              </svg>
-            </span>
-            <h3>Gravação Profissional</h3>
-            <p>Estúdio insonorizado com equipamentos de nível broadcast e iluminação cinematográfica.</p>
+    <section class="podcasts" id="podcasts" aria-label="Podcasts que produzimos">
+      <div class="container podcasts-inner">
+        <p class="podcasts-label">NOSSOS PODCASTS</p>
+        <h2 class="podcasts-title">Podcasts que<br><span class="highlight">contemplamos</span></h2>
+
+
+        <div class="podcasts-grid">
+          <article class="podcast-card">
+            <div class="podcast-logo-wrap">
+              <img src="scr/imgs/logo%20CAF%C3%89%20COM%20CONTIGENCIA.png" alt="Café com Contingência" loading="lazy">
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M20 4L8 16"></path>
-                <path d="M8 8l12 12"></path>
-              </svg>
-            </span>
-            <h3>Edição & Pós-Produção</h3>
-            <p>Corte, mixagem, trilha sonora e masterização de áudio para uma qualidade impecável.</p>
+          <article class="podcast-card">
+            <div class="podcast-logo-wrap">
+              <img src="scr/imgs/logo%20CHOCKMAH.png" alt="Chockmah" loading="lazy">
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9"></circle>
-                <path d="M3 12h18"></path>
-                <path d="M12 3a14 14 0 0 1 0 18"></path>
-                <path d="M12 3a14 14 0 0 0 0 18"></path>
-              </svg>
-            </span>
-            <h3>Distribuição Digital</h3>
-            <p>Publicamos seu podcast em todas as plataformas: Spotify, Deezer, Apple Podcasts e mais.</p>
+          <article class="podcast-card">
+            <div class="podcast-logo-wrap">
+              <img src="scr/imgs/logo%20HOLLY.png" alt="Holly" loading="lazy">
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4v16h16"></path>
-                <path d="M7 15l4-4 3 3 5-5"></path>
-              </svg>
-            </span>
-            <h3>Estratégia de Conteúdo</h3>
-            <p>Planejamos cada episódio para engajar sua audiência e maximizar o alcance dos seus ouvintes.</p>
+          <article class="podcast-card">
+            <div class="podcast-logo-wrap">
+              <img src="scr/imgs/logo%20RESTART.png" alt="Restart" loading="lazy">
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3a9 9 0 1 0 0 18h1a3 3 0 0 0 0-6h-1a2.5 2.5 0 0 1 0-5h1a3.5 3.5 0 0 0 0-7z"></path>
-                <circle cx="7.5" cy="10" r="1"></circle>
-                <circle cx="9" cy="7" r="1"></circle>
-                <circle cx="12" cy="6" r="1"></circle>
-              </svg>
-            </span>
-            <h3>Identidade Visual</h3>
-            <p>Criamos a identidade visual do seu podcast: capas atrativas, logo e templates para redes sociais.</p>
+          <article class="podcast-card">
+            <div class="podcast-logo-wrap">
+              <img src="scr/imgs/logo%20SINETROSV%20CAST.png" alt="Sinetrosv Cast" loading="lazy">
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="8" cy="8" r="4"></circle>
-                <path d="M11 11l9 9"></path>
-                <path d="M17 17l3-3"></path>
-              </svg>
-            </span>
-            <h3>Locução & Roteiro</h3>
-            <p>Equipe de roteiristas experientes e locutores profissionais disponíveis para seu projeto.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="methodology" id="metodologia" aria-label="Como funciona">
-      <div class="container methodology-inner">
-        <p class="methodology-label">COMO FUNCIONA</p>
-        <h2 class="methodology-title">Metodologia Reinvente</h2>
-
-        <div class="methodology-timeline">
-          <article class="method-step">
-            <div class="method-step-number">01</div>
-            <h3>Briefing</h3>
-            <p>Entendemos sua história, público-alvo e objetivos.</p>
-          </article>
-
-          <article class="method-step">
-            <div class="method-step-number">02</div>
-            <h3>Planejamento</h3>
-            <p>Criamos o roteiro e a identidade do seu podcast.</p>
-          </article>
-
-          <article class="method-step">
-            <div class="method-step-number">03</div>
-            <h3>Gravação</h3>
-            <p>Dia de gravação no nosso estúdio profissional.</p>
-          </article>
-
-          <article class="method-step">
-            <div class="method-step-number">04</div>
-            <h3>Pós-Produção</h3>
-            <p>Edição, mixagem e masterização do áudio.</p>
-          </article>
-
-          <article class="method-step">
-            <div class="method-step-number">05</div>
-            <h3>Publicação</h3>
-            <p>Distribuição em todas as plataformas digitais.</p>
+          <article class="podcast-card">
+            <div class="podcast-logo-wrap">
+              <img src="scr/imgs/logo%20TIMMY%20CAST.png" alt="Timmy Cast" loading="lazy">
+            </div>
           </article>
         </div>
       </div>
@@ -320,6 +347,10 @@
 
     <section class="final-cta" aria-label="Chamada para contato">
       <div class="container final-cta-inner">
+        <div class="final-cta-sticker" aria-hidden="true">
+          <img src="scr/imgs/podcast-7-q.jpg" alt="Placa no ar">
+        </div>
+
         <h2 class="final-cta-title">
           Pronto para dar voz ao <span>seu negócio?</span>
         </h2>
@@ -329,7 +360,7 @@
           transformar suas ideias em conteúdo de sucesso.
         </p>
 
-        <a href="#" class="final-cta-button">Agendar Visita Gratuita</a>
+        <a href="https://wa.me/5511916108176" class="final-cta-button" target="_blank" rel="noopener noreferrer">Agendar Visita Gratuita</a>
 
         <p class="final-cta-mail">
           Ou entre em contato pelo e-mail:
@@ -338,53 +369,44 @@
       </div>
     </section>
 
-    <section class="faq" id="duvidas" aria-label="Perguntas frequentes">
-      <div class="container faq-inner">
-        <p class="faq-label">DUVIDAS</p>
-        <h2 class="faq-title">Perguntas Frequentes</h2>
+    <section class="includes" id="locacao" aria-label="O que está incluso na locação">
+      <div class="container includes-inner">
+        <p class="includes-label">O QUE VOCÊ RECEBE</p>
+        <h2 class="includes-title">Locação pronta para gravar</h2>
+        <p class="includes-lead">
+          Chegou, gravou!. Estúdio organizado para facilitar sua sessão.
+        </p>
 
-        <div class="faq-list">
-          <article class="faq-item is-active">
-            <button class="faq-question" type="button" aria-expanded="true">
-              <span>Preciso ter experiência com podcast?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer">
-              <p>Não! Nossa equipe cuida de tudo, desde o roteiro até a publicação. Você só precisa trazer suas ideias e sua voz.</p>
-            </div>
+        <div class="includes-grid">
+          <article class="includes-card">
+            <span class="includes-kicker">01 · ESTRUTURA</span>
+            <h3>Pronto para câmera</h3>
+            <p>Ambiente organizado e visualmente pensado para gravação.</p>
+            <ul class="includes-list">
+              <li>Layout preparado para vídeo</li>
+              <li>Iluminação e cenário controlados</li>
+            </ul>
           </article>
 
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Quanto tempo demora para produzir um episódio?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer">
-              <p>Depende da complexidade da pauta, edição e revisões, mas geralmente leva de 5 a 10 dias.</p>
-            </div>
+          <article class="includes-card">
+            <span class="includes-kicker">02 · SUPORTE</span>
+            <h3>Fluxo simples</h3>
+            <p>Você entra, se posiciona e começa sem complicação.</p>
+            <ul class="includes-list">
+              <li>Orientação no setup</li>
+              <li>Apoio durante a sessão</li>
+            </ul>
           </article>
 
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Vocês atendem empresas e marcas?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer">
-              <p>Sim. Desenvolvemos podcasts autorais para marcas, líderes e equipes de marketing.</p>
-            </div>
+          <article class="includes-card">
+            <span class="includes-kicker">03 · ENTREGA</span>
+            <h3>Resultado premium</h3>
+            <p>Áudio e imagem prontos para valorizar seu conteúdo.</p>
+            <ul class="includes-list">
+              <li>Captação limpa e consistente</li>
+              <li>Visual pensado para redes</li>
+            </ul>
           </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">
-              <span>Quais plataformas vocês distribuem?</span>
-              <span class="faq-icon" aria-hidden="true"></span>
-            </button>
-            <div class="faq-answer">
-              <p>Distribuimos para Spotify, Apple Podcasts, Deezer, Amazon Music, YouTube e outras plataformas de preferência.</p>
-            </div>
-          </article>
-
-          
         </div>
       </div>
     </section>
@@ -433,7 +455,7 @@
           <h3>Navegação</h3>
           <a href="#">Sobre</a>
           <a href="#servicos">Serviços</a>
-          <a href="#metodologia">Metodologia</a>
+          <a href="#podcasts">Podcasts</a>
           <a href="#contato">Contato</a>
         </div>
 
