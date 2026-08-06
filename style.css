@@ -39,6 +39,10 @@ body {
   overflow-x: hidden;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -82,9 +86,14 @@ video {
 
 .brand {
   margin-right: auto;
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 34px;
+  width: auto;
+  display: block;
 }
 
 .nav {
@@ -651,58 +660,144 @@ video {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
   padding-bottom: 28px;
   align-items: stretch;
 }
 
-.quote-card {
-  border: 1px solid var(--line);
-  background: #090909;
-  padding: 14px;
-  min-height: 210px;
+.testimonial-card {
+  border: 1px solid rgba(212, 166, 58, 0.2);
+  background: linear-gradient(180deg, #0d0d0d 0%, #080808 100%);
+  padding: 0;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.person {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 44px;
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(212, 166, 58, 0.45);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
 }
 
-.avatar {
-  width: 44px;
-  height: 44px;
+.testimonial-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111;
+}
+
+.testimonial-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 24px;
+  background: #000;
+  filter: brightness(1) contrast(1.02);
+}
+
+.play-badge {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 72px;
+  height: 72px;
   border-radius: 999px;
-  border: 1px solid rgba(212, 166, 58, 0.45);
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background: rgba(211, 166, 58, 0.9);
+  color: #111;
+  font-size: 26px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
+}
+
+.testimonial-copy {
+  padding: 18px 18px 20px;
+}
+
+.testimonial-copy h3 {
+  margin: 8px 0 6px;
+  font-size: 20px;
   color: var(--gold);
-  font-size: 14px;
-  font-weight: 700;
 }
 
-.person h3 {
+.testimonial-copy p {
   margin: 0;
-  font-size: 17px;
-}
-
-.person p {
-  margin: 2px 0 0;
-  color: #9f9f9f;
-  font-size: 13px;
-}
-
-.quote-card blockquote {
-  margin: 12px 0 0;
-  color: #cfcfcf;
+  color: #a8a8a8;
   font-size: 14px;
-  line-height: 1.34;
-  flex: 1;
+  line-height: 1.4;
+}
+
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.video-modal.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.video-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.86);
+  backdrop-filter: blur(4px);
+}
+
+.video-modal__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(980px, 100%);
+  background: #050505;
+  border: 1px solid rgba(212, 166, 58, 0.2);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  padding: 20px;
+}
+
+.video-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.video-modal__header {
+  margin-bottom: 14px;
+  padding-right: 54px;
+}
+
+.video-modal__header h3 {
+  margin: 6px 0 0;
+  font-size: 22px;
+}
+
+.video-modal__video {
+  width: 100%;
+  max-height: min(70vh, 640px);
+  border-radius: 4px;
+  background: #000;
 }
 
 .cta-final {
